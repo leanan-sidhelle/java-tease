@@ -25,37 +25,9 @@
  * For more information, please refer to <http://unlicense.org/>
  */
 plugins {
-    id "java"
-    id "io.toolebox.git-versioner"
-}
-
-group = "com.github.leanan.sidhelle"
-
-repositories {
-    mavenCentral()
+    id "com.github.leanan.sidhelle.spring-boot-conventions"
 }
 
 dependencies {
-    constraints {
-        implementation "org.apache.commons:commons-text:1.9"
-    }
-
-    testImplementation "org.junit.jupiter:junit-jupiter:5.7.2"
-}
-
-tasks.named("test") {
-    useJUnitPlatform() // Use JUnit Platform for unit tests.
-}
-
-task packageJavadoc(type: Jar, dependsOn: "javadoc") {
-    from javadoc.destinationDir
-    classifier = "javadoc"
-}
-task packageSources(type: Jar, dependsOn: "classes") {
-    from sourceSets.main.allSource
-    classifier = "sources"
-}
-artifacts {
-    archives packageJavadoc
-    archives packageSources
+    implementation "org.springframework.boot:spring-boot-starter-web"
 }
