@@ -24,5 +24,4 @@
  * 
  * For more information, please refer to <http://unlicense.org/>
  */
-rootProject.name = 'java-tease'
-include('app', 'list', 'utilities')
+rootProject.name = "java-tease"
