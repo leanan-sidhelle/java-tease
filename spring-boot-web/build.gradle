@@ -24,6 +24,14 @@
  * 
  * For more information, please refer to <http://unlicense.org/>
  */
-rootProject.name = "java-tease"
+plugins {
+    id "com.github.leanan.sidhelle.spring-web-conventions"
+}
 
-include "spring-boot-web"
+application {
+    mainClass = "com.github.leanan.sidhelle.util.AbstractSpringWebApplication"
+}
+
+dependencies {
+    
+}
