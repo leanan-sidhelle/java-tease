@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"com.github.leanan.sidhelle.util","l":"Logger"},{"p":"com.github.leanan.sidhelle.util","l":"SpringWebApplication"}];updateSearchResults();

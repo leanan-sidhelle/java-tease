@@ -22,9 +22,8 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  * 
- * For more information, please refer to <https://unlicense.org>
+ * For more information, please refer to <http://unlicense.org/>
  */
 plugins {
-    id "com.github.leanan.sidhelle.java-common-conventions"
-    id "java-library"
+    id "io.freefair.aggregate-javadoc" version "6.3.0-rc1"
 }

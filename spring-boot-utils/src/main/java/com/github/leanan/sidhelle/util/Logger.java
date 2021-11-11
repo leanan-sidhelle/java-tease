@@ -122,8 +122,8 @@ public class Logger {
 	
 	/**
 	 * TODO:
-	 * @param depth
-	 * @return
+	 * @param depth - levels to recurse in stack trace
+	 * @return - String
 	 */
 	protected String callsite(int depth) {
 		Thread thread = Thread.currentThread();
