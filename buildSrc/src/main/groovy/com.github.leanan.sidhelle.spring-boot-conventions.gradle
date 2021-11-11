@@ -25,15 +25,11 @@
  * For more information, please refer to <https://unlicense.org>
  */
 plugins {
-    id "groovy-gradle-plugin"
-}
-
-repositories {
-    gradlePluginPortal()
+    id "com.github.leanan.sidhelle.java-common-conventions"
+	id "org.springframework.boot"
 }
 
 dependencies {
-    implementation "gradle.plugin.io.toolebox:gradle-git-versioner:1.6.5"
-    implementation "com.github.spotbugs.snom:spotbugs-gradle-plugin:5.0.0-beta.6"
-    implementation "org.springframework.boot:spring-boot-gradle-plugin:2.5.6"
+    implementation     "org.springframework.boot:spring-boot-starter:2.5.6"
+	testImplementation "org.springframework.boot:spring-boot-starter-test:2.5.6"
 }
