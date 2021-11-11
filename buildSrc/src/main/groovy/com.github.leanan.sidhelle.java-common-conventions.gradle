@@ -26,6 +26,9 @@
  */
 plugins {
     id "java"
+    id "maven-publish"
+    id "jacoco"
+    id "com.github.spotbugs"
     id "io.toolebox.git-versioner"
 }
 
@@ -45,6 +48,12 @@ dependencies {
 
 tasks.named("test") {
     useJUnitPlatform() // Use JUnit Platform for unit tests.
+}
+
+publishing {
+   repositories {
+      maven { url "${project.rootDir}/releases" }
+   }
 }
 
 task packageJavadoc(type: Jar, dependsOn: "javadoc") {
